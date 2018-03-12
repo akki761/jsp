@@ -11,7 +11,7 @@
     String pass= request.getParameter("pass");
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp", "root", "mysql");
+        Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp", "root", "ttn");
         PreparedStatement ps = c.prepareStatement("select uid from signup where uid =? and pass = ?");
         ps.setString(1, uid);
         ps.setString(2, pass);

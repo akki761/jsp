@@ -12,14 +12,14 @@
         String uid = request.getParameter("uid");
         String pass= request.getParameter("pass");
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp", "root", "mysql");
-        PreparedStatement pst = con.prepareStatement("insert into signup values(?,?,?,?,?,?)");
-        pst.setString(1,fn);
-        pst.setString(2,ln);
-        pst.setInt(3,mb);
-        pst.setString(4,em);
-        pst.setString(5,uid);
-        pst.setString(6,pass);
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp", "root", "ttn");
+        PreparedStatement pst = con.prepareStatement("insert into signup values(?,?)");
+        pst.setString(1,uid);
+        pst.setString(2,pass);
+//        pst.setInt(3,mb);
+//        pst.setString(4,em);
+//        pst.setString(5,uid);
+//        pst.setString(6,pass);
         int i = pst.executeUpdate();
         if(i!=0)
         {

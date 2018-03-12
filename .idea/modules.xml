@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jspp.iml" filepath="$PROJECT_DIR$/.idea/modules/jspp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jspp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jspp_main.iml" group="jspp" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jspp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jspp_test.iml" group="jspp" />
+      <module fileurl="file://$PROJECT_DIR$/JSP.iml" filepath="$PROJECT_DIR$/JSP.iml" />
     </modules>
   </component>
 </project>
